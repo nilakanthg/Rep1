@@ -1,0 +1,37 @@
+---
+// src/components/home/Hero.astro
+---
+
+<section id="hero" class="relative h-screen flex items-center justify-center overflow-hidden bg-stone-950" data-ps="src/components/home/Hero.astro:1">
+  <!-- Hero Background Image -->
+  <div class="absolute inset-0 z-0" data-ps="src/components/home/Hero.astro:2">
+    <img 
+      src="https://images.unsplash.com/photo-1587842501012-1bf5cca58a40?auto=format&w=1200&q=80" 
+      srcset="https://images.unsplash.com/photo-1587842501012-1bf5cca58a40?auto=format&w=320&q=80 320w, https://images.unsplash.com/photo-1587842501012-1bf5cca58a40?auto=format&w=480&q=80 480w, https://images.unsplash.com/photo-1587842501012-1bf5cca58a40?auto=format&w=640&q=80 640w, https://images.unsplash.com/photo-1587842501012-1bf5cca58a40?auto=format&w=768&q=80 768w, https://images.unsplash.com/photo-1587842501012-1bf5cca58a40?auto=format&w=1024&q=80 1024w, https://images.unsplash.com/photo-1587842501012-1bf5cca58a40?auto=format&w=1280&q=80 1280w, https://images.unsplash.com/photo-1587842501012-1bf5cca58a40?auto=format&w=1920&q=80 1920w"
+      sizes="100vw"
+      alt="Mumbai skyline at sunset" 
+      class="w-full h-full object-cover opacity-60"
+      loading="eager"
+      fetchpriority="high"
+      crossorigin="anonymous" data-ps="src/components/home/Hero.astro:fibi7w"
+    />
+  </div>
+
+  <!-- Content -->
+  <div class="relative z-10 text-center px-4 max-w-4xl" data-ps="src/components/home/Hero.astro:3">
+    <h1 class="hero-animate text-stone-50 text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight" data-ps="src/components/home/Hero.astro:4">
+      Mumbai <span class="text-amber-600" data-ps="src/components/home/Hero.astro:5">Swaad.</span>
+    </h1>
+    <p class="hero-animate hero-animate-delay-1 text-stone-300 text-xl md:text-2xl mb-10 max-w-2xl mx-auto leading-relaxed" data-ps="src/components/home/Hero.astro:6">
+      El auténtico sabor de la India llega al corazón de Madrid. Cocina callejera y tradicional con un toque contemporáneo.
+    </p>
+    <div class="hero-animate hero-animate-delay-2 flex flex-col sm:flex-row gap-4 justify-center" data-ps="src/components/home/Hero.astro:7">
+      <a href="/#menu" class="px-8 py-4 bg-amber-700 hover:bg-amber-800 text-white font-bold rounded-md transition-all hover-lift" data-ps="src/components/home/Hero.astro:8">
+        Ver Menú
+      </a>
+      <a href="/#visit" class="px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-stone-950 font-bold rounded-md transition-all hover-lift" data-ps="src/components/home/Hero.astro:9">
+        Reservar Mesa
+      </a>
+    </div>
+  </div>
+</section>

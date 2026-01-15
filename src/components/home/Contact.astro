@@ -1,0 +1,132 @@
+---
+// src/components/home/Contact.astro
+---
+
+<section id="visit" class="py-24 bg-stone-900 text-stone-50" data-ps="src/components/home/Contact.astro:1">
+  <div class="max-w-7xl mx-auto px-4 md:px-8" data-ps="src/components/home/Contact.astro:2">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16" data-ps="src/components/home/Contact.astro:3">
+      
+      <!-- Contact Info -->
+      <div class="reveal flex flex-col" data-ps="src/components/home/Contact.astro:4">
+        <h2 class="text-4xl md:text-5xl font-bold mb-8" data-ps="src/components/home/Contact.astro:5">Visit Us</h2>
+        <div class="space-y-10 mb-12" data-ps="src/components/home/Contact.astro:6">
+          <div data-ps="src/components/home/Contact.astro:7">
+            <h3 class="text-amber-600 font-bold uppercase tracking-widest text-sm mb-2" data-ps="src/components/home/Contact.astro:8">Location</h3>
+            <p class="text-xl" data-ps="src/components/home/Contact.astro:9">Calle de Puentedeume, 20, 28029 Madrid, Spain</p>
+          </div>
+          <div data-ps="src/components/home/Contact.astro:10">
+            <h3 class="text-amber-600 font-bold uppercase tracking-widest text-sm mb-2" data-ps="src/components/home/Contact.astro:11">Hours</h3>
+            <p class="text-xl" data-ps="src/components/home/Contact.astro:12">Tuesday – Sunday<br />5:00pm – 10:00pm</p>
+          </div>
+          <div data-ps="src/components/home/Contact.astro:13">
+            <h3 class="text-amber-600 font-bold uppercase tracking-widest text-sm mb-2" data-ps="src/components/home/Contact.astro:14">Contact</h3>
+            <p class="text-xl" data-ps="src/components/home/Contact.astro:15">(555) 123-4567<br />hello@emberandoak.com</p>
+          </div>
+          <div class="pt-6" data-ps="src/components/home/Contact.astro:16">
+            <a href="https://opentable.com" target="_blank" rel="noopener noreferrer" class="inline-block px-8 py-4 bg-amber-700 hover:bg-amber-800 text-white font-bold rounded-md transition-all hover-lift" data-ps="src/components/home/Contact.astro:17">
+              Book via OpenTable
+            </a>
+          </div>
+        </div>
+
+        <!-- Google Map -->
+        <div class="mt-auto h-80 w-full rounded-2xl overflow-hidden border border-stone-800 shadow-xl" data-ps="src/components/home/Contact.astro:map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3034.4674720614835!2d-3.6974128!3d40.4870197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422998a1078a9b%3A0xb5b73d8a7350c766!2sC.%20de%20Puentedeume%2C%2020%2C%20Fuencarral-El%20Pardo%2C%2028029%20Madrid%2C%20Spain!5e0!3m2!1sen!2sus!4v1715850000000!5m2!1sen!2sus" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            class="grayscale contrast-125 opacity-80"
+            data-ps="src/components/home/Contact.astro:map-iframe"
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Inquiry Form -->
+      <div class="reveal reveal-delay-1 bg-stone-950 p-8 md:p-12 rounded-2xl shadow-2xl border border-stone-800" data-ps="src/components/home/Contact.astro:18">
+        <h3 class="text-2xl font-bold mb-6" data-ps="src/components/home/Contact.astro:19">Private Dining Inquiries</h3>
+        <p class="text-stone-400 mb-8" data-ps="src/components/home/Contact.astro:20">For large parties and private events, please get in touch.</p>
+        
+        <div id="contact-status" class="hidden mb-6 px-4 py-3 rounded-lg" data-ps="src/components/home/Contact.astro:21"></div>
+
+        <form id="contact-form" class="space-y-4" data-ps="src/components/home/Contact.astro:22">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4" data-ps="src/components/home/Contact.astro:23">
+            <div data-ps="src/components/home/Contact.astro:24">
+              <label for="name" class="block text-xs font-bold uppercase text-stone-500 mb-2" data-ps="src/components/home/Contact.astro:25">Name</label>
+              <input type="text" id="name" name="name" required class="w-full bg-stone-900 border border-stone-800 rounded-md px-4 py-3 focus:ring-2 focus:ring-amber-700 focus:border-transparent transition-all outline-none" data-ps="src/components/home/Contact.astro:26" />
+            </div>
+            <div data-ps="src/components/home/Contact.astro:27">
+              <label for="email" class="block text-xs font-bold uppercase text-stone-500 mb-2" data-ps="src/components/home/Contact.astro:28">Email</label>
+              <input type="email" id="email" name="email" required class="w-full bg-stone-900 border border-stone-800 rounded-md px-4 py-3 focus:ring-2 focus:ring-amber-700 focus:border-transparent transition-all outline-none" data-ps="src/components/home/Contact.astro:29" />
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4" data-ps="src/components/home/Contact.astro:30">
+            <div data-ps="src/components/home/Contact.astro:31">
+              <label for="date" class="block text-xs font-bold uppercase text-stone-500 mb-2" data-ps="src/components/home/Contact.astro:32">Date</label>
+              <input type="date" id="date" name="date" class="w-full bg-stone-900 border border-stone-800 rounded-md px-4 py-3 focus:ring-2 focus:ring-amber-700 focus:border-transparent transition-all outline-none" data-ps="src/components/home/Contact.astro:33" />
+            </div>
+            <div data-ps="src/components/home/Contact.astro:34">
+              <label for="guests" class="block text-xs font-bold uppercase text-stone-500 mb-2" data-ps="src/components/home/Contact.astro:35">Guests</label>
+              <input type="number" id="guests" name="guests" min="1" class="w-full bg-stone-900 border border-stone-800 rounded-md px-4 py-3 focus:ring-2 focus:ring-amber-700 focus:border-transparent transition-all outline-none" data-ps="src/components/home/Contact.astro:36" />
+            </div>
+          </div>
+          <div data-ps="src/components/home/Contact.astro:37">
+            <label for="message" class="block text-xs font-bold uppercase text-stone-500 mb-2" data-ps="src/components/home/Contact.astro:38">Message</label>
+            <textarea id="message" name="message" rows="4" required class="w-full bg-stone-900 border border-stone-800 rounded-md px-4 py-3 focus:ring-2 focus:ring-amber-700 focus:border-transparent transition-all outline-none" data-ps="src/components/home/Contact.astro:39"></textarea>
+          </div>
+          <button type="submit" id="contact-submit" class="w-full py-4 bg-amber-700 hover:bg-amber-800 text-white font-bold rounded-md transition-all hover-lift mt-4" data-ps="src/components/home/Contact.astro:40">
+            Send Inquiry
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const form = document.getElementById('contact-form') as HTMLFormElement;
+  const status = document.getElementById('contact-status') as HTMLDivElement;
+  const submitBtn = document.getElementById('contact-submit') as HTMLButtonElement;
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+
+    const formData = new FormData(form);
+    const data = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      subject: `Private Dining Inquiry: ${formData.get('date')} for ${formData.get('guests')} guests`,
+      message: formData.get('message'),
+    };
+
+    try {
+      const response = await fetch('/psapi-internal-v1/forms/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        status.className = 'mb-6 px-4 py-3 rounded-lg bg-stone-800 border border-amber-900 text-stone-100';
+        status.textContent = 'Thank you! Your inquiry has been sent. We will contact you soon.';
+        form.reset();
+      } else {
+        throw new Error(result.error || 'Failed to send');
+      }
+    } catch (err) {
+      status.className = 'mb-6 px-4 py-3 rounded-lg bg-red-900/20 border border-red-900 text-red-100';
+      status.textContent = 'Something went wrong. Please try again or call us directly.';
+    } finally {
+      status.classList.remove('hidden');
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Send Inquiry';
+    }
+  });
+</script>

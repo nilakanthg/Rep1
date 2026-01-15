@@ -1,0 +1,50 @@
+---
+// src/components/home/Gallery.astro
+---
+
+<section id="gallery" class="py-24 bg-stone-100" data-ps="src/components/home/Gallery.astro:1">
+  <div class="max-w-7xl mx-auto px-4 md:px-8" data-ps="src/components/home/Gallery.astro:2">
+    <div class="text-center mb-16 reveal" data-ps="src/components/home/Gallery.astro:3">
+      <h2 class="text-stone-900 text-4xl md:text-5xl font-bold" data-ps="src/components/home/Gallery.astro:4">Visual Feast</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6" data-ps="src/components/home/Gallery.astro:5">
+      <!-- Item 1 -->
+      <div class="reveal reveal-delay-1 aspect-[4/5] rounded-xl overflow-hidden shadow-lg hover-scale" data-ps="src/components/home/Gallery.astro:6">
+        <img 
+          src="https://images.unsplash.com/photo-1606605811503-93b16f35e06b?auto=format&w=800&q=80" 
+          srcset="https://images.unsplash.com/photo-1606605811503-93b16f35e06b?auto=format&w=400 400w, https://images.unsplash.com/photo-1606605811503-93b16f35e06b?auto=format&w=600 600w, https://images.unsplash.com/photo-1606605811503-93b16f35e06b?auto=format&w=800 800w"
+          sizes="(max-width: 768px) 100vw, 33vw"
+          alt="Steak dinner with wine glass on a dark table" 
+          class="w-full h-full object-cover"
+          loading="lazy"
+          crossorigin="anonymous" data-ps="src/components/home/Gallery.astro:c6pzdc"
+        />
+      </div>
+      <!-- Item 2 -->
+      <div class="reveal reveal-delay-2 aspect-[4/5] rounded-xl overflow-hidden shadow-lg hover-scale" data-ps="src/components/home/Gallery.astro:7">
+        <img 
+          src="https://images.unsplash.com/photo-1648995412276-c46b991cc3d6?auto=format&w=800&q=80" 
+          srcset="https://images.unsplash.com/photo-1648995412276-c46b991cc3d6?auto=format&w=400 400w, https://images.unsplash.com/photo-1648995412276-c46b991cc3d6?auto=format&w=600 600w, https://images.unsplash.com/photo-1648995412276-c46b991cc3d6?auto=format&w=800 800w"
+          sizes="(max-width: 768px) 100vw, 33vw"
+          alt="Cocktail bar with dark atmosphere" 
+          class="w-full h-full object-cover"
+          loading="lazy"
+          crossorigin="anonymous" data-ps="src/components/home/Gallery.astro:c6pzdd"
+        />
+      </div>
+      <!-- Item 3 -->
+      <div class="reveal reveal-delay-3 aspect-[4/5] rounded-xl overflow-hidden shadow-lg hover-scale" data-ps="src/components/home/Gallery.astro:8">
+        <img 
+          src="https://images.unsplash.com/photo-1663078715657-7349849e0224?auto=format&w=800&q=80" 
+          srcset="https://images.unsplash.com/photo-1663078715657-7349849e0224?auto=format&w=400 400w, https://images.unsplash.com/photo-1663078715657-7349849e0224?auto=format&w=600 600w, https://images.unsplash.com/photo-1663078715657-7349849e0224?auto=format&w=800 800w"
+          sizes="(max-width: 768px) 100vw, 33vw"
+          alt="Fresh sourdough bread on a wooden table" 
+          class="w-full h-full object-cover"
+          loading="lazy"
+          crossorigin="anonymous" data-ps="src/components/home/Gallery.astro:c6pzde"
+        />
+      </div>
+    </div>
+  </div>
+</section>

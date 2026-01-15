@@ -1,0 +1,42 @@
+---
+import { SITE } from '../../config/site';
+
+const domain = new URL(SITE.url).hostname;
+// Privacy Policy Content
+---
+
+<section class="pt-12 pb-20 px-6" data-ps="src/components/legal/PrivacyContent.astro:9e1zdx">
+  <div class="max-w-4xl mx-auto" data-ps="src/components/legal/PrivacyContent.astro:jp2zv3">
+    <h1 style="color: var(--text);" class="text-5xl md:text-6xl font-bold mb-6" data-ps="src/components/legal/PrivacyContent.astro:pgdhw1">
+      Privacy Policy
+    </h1>
+    <p style="color: var(--text-muted);" class="text-sm mb-8" data-ps="src/components/legal/PrivacyContent.astro:z0kw1s">Last updated: January 2025</p>
+
+    <div class="max-w-none" data-ps="src/components/legal/PrivacyContent.astro:jp2zv2">
+      <section class="mb-12" data-ps="src/components/legal/PrivacyContent.astro:9e1zdw">
+        <h2 style="color: var(--text);" class="text-3xl font-bold mb-4" data-ps="src/components/legal/PrivacyContent.astro:ozbur4">Introduction</h2>
+        <p style="color: var(--text-muted);" class="mb-4" data-ps="src/components/legal/PrivacyContent.astro:z0kw1t">
+          Welcome to {SITE.name}. We respect your privacy and are committed to protecting your personal data.
+        </p>
+      </section>
+
+      <section class="mb-12" data-ps="src/components/legal/PrivacyContent.astro:9e1zdv">
+        <h2 style="color: var(--text);" class="text-3xl font-bold mb-4" data-ps="src/components/legal/PrivacyContent.astro:ozbur3">Information We Collect</h2>
+        <p style="color: var(--text-muted);" class="mb-4" data-ps="src/components/legal/PrivacyContent.astro:z0kw1u">
+          We may collect, use, store and transfer different kinds of personal data about you.
+        </p>
+      </section>
+
+      <section class="mb-12" data-ps="src/components/legal/PrivacyContent.astro:9e1zdu">
+        <h2 style="color: var(--text);" class="text-3xl font-bold mb-4" data-ps="src/components/legal/PrivacyContent.astro:ozbur2">Contact Us</h2>
+        <p style="color: var(--text-muted);" class="mb-4" data-ps="src/components/legal/PrivacyContent.astro:z0kw1v">
+          If you have any questions about this Privacy Policy, please contact us:
+        </p>
+        <ul style="color: var(--text-muted);" class="list-disc list-inside space-y-2">
+          <li data-ps="src/components/legal/PrivacyContent.astro:6627re">By email: privacy@{domain}</li>
+          <li data-ps="src/components/legal/PrivacyContent.astro:6627rf">By visiting this page on our website: {SITE.url}/contact</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,42 @@
+---
+import { SITE } from '../../config/site';
+
+const domain = new URL(SITE.url).hostname;
+// Terms of Service Content
+---
+
+<section class="pt-12 pb-20 px-6" data-ps="src/components/legal/TermsContent.astro:ou088s">
+  <div class="max-w-4xl mx-auto" data-ps="src/components/legal/TermsContent.astro:frzriq">
+    <h1 style="color: var(--text);" class="text-5xl md:text-6xl font-bold mb-6" data-ps="src/components/legal/TermsContent.astro:518mfk">
+      Terms of Service
+    </h1>
+    <p style="color: var(--text-muted);" class="text-sm mb-8" data-ps="src/components/legal/TermsContent.astro:58sd35">Last updated: January 2025</p>
+
+    <div class="max-w-none" data-ps="src/components/legal/TermsContent.astro:frzrir">
+      <section class="mb-12" data-ps="src/components/legal/TermsContent.astro:ou088t">
+        <h2 style="color: var(--text);" class="text-3xl font-bold mb-4" data-ps="src/components/legal/TermsContent.astro:5ia9kh">Agreement to Terms</h2>
+        <p style="color: var(--text-muted);" class="mb-4" data-ps="src/components/legal/TermsContent.astro:58sd34">
+          By accessing and using {SITE.name}'s services, you agree to be bound by these Terms of Service.
+        </p>
+      </section>
+
+      <section class="mb-12" data-ps="src/components/legal/TermsContent.astro:ou088u">
+        <h2 style="color: var(--text);" class="text-3xl font-bold mb-4" data-ps="src/components/legal/TermsContent.astro:5ia9ki">Use License</h2>
+        <p style="color: var(--text-muted);" class="mb-4" data-ps="src/components/legal/TermsContent.astro:58sd33">
+          Permission is granted to temporarily access the materials on {SITE.name}'s website for personal, non-commercial use only.
+        </p>
+      </section>
+
+      <section class="mb-12" data-ps="src/components/legal/TermsContent.astro:ou088v">
+        <h2 style="color: var(--text);" class="text-3xl font-bold mb-4" data-ps="src/components/legal/TermsContent.astro:5ia9kj">Contact Us</h2>
+        <p style="color: var(--text-muted);" class="mb-4" data-ps="src/components/legal/TermsContent.astro:58sd32">
+          If you have any questions about these Terms, please contact us:
+        </p>
+        <ul style="color: var(--text-muted);" class="list-disc list-inside space-y-2">
+          <li data-ps="src/components/legal/TermsContent.astro:rxn821">By email: legal@{domain}</li>
+          <li data-ps="src/components/legal/TermsContent.astro:rxn822">By visiting this page on our website: {SITE.url}/contact</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</section>
